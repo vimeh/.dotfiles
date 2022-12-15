@@ -1,0 +1,5 @@
+require("vinay.set")
+require("vinay.packer")
+require("vinay.remap")
+require("vinay.copied_from_internet")
+require("vinay.telescope")
