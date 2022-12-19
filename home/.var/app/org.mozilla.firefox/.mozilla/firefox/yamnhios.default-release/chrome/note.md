@@ -11,4 +11,5 @@ The location for flatpak'd Firefox user profiles is weird; it goes here:
 Here's the [reddit thread](https://www.reddit.com/r/firefox/comments/rq40cj/cant_find_profile_folder_for_firefox_flatpak_on/) with the info on how this was found
 
 # Misc
-Need to go to about:config and turn on the preference for legacy stylesheets 
+- Need to go to about:config and turn on the preference for legacy stylesheets 
+- Need to allow the flatpak access to the location of the symlinked file (flatseal), or just copy the actual file
