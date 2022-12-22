@@ -1,8 +1,8 @@
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+vim.cmd.packadd('packer.nvim')
 
-vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+-- vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -94,7 +94,10 @@ return require('packer').startup(function(use)
   }
 
   -- parked for now
-  -- use 'nvim-treesitter/nvim-treesitter'
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+  }
   -- use {'neoclide/coc.nvim', branch = 'release'}
   
   -- sources
